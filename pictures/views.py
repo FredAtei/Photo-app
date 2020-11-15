@@ -1,8 +1,9 @@
 from django.shortcuts import render
-from .models import Picture
+from .models import Image,Location,Category
 
 # Create your views here.
 def index(request):
-    pictures = Picture.objects.all()
-    ctx = {'pictures': pictures}
-    return render(request, 'pictures/index.html', ctx)
+    images = Image.objects.all()
+    locations = Location.objects.all()
+    print(locations)
+    return render(request, 'pictures/index.html', {'images': images[::-1], 'locations':locations})
