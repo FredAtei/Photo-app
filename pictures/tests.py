@@ -28,12 +28,6 @@ class LocationTestClass(TestCase):
 
 class ImageTestClass(TestCase):
     def setUp(self):
-        self.travel = Category(name = 'travel')
-        self.travel.save_category()
-
-        self.locations = Location(name='Paris')
-        self.locations.save_location()
-
         self.new_image=Image(image_name='Eot',image_description='Great things',image_category=self.travel,image_location=self.locations)
         self.new_image.save_image()
 
@@ -45,8 +39,3 @@ class ImageTestClass(TestCase):
     def test_get_images(self):
         all_images = Image.get_images()
         self.assertTrue(len(all_images)>0)
-
-    def test_filter_by_location(self):
-        test_location_id = 6
-        images_location = Image.filter_by_location(test_location_id) 
-        self.assertTrue(len(images_location) == 0)              

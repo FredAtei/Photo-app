@@ -3,10 +3,10 @@ from cloudinary.models import CloudinaryField
 
 class Image(models.Model):
     image = CloudinaryField('image')
-    image_name = models.CharField(max_length =30)
-    image_description = models.TextField()
-    image_location = models.ForeignKey('Location',on_delete=models.CASCADE)
-    image_category = models.ForeignKey('Category',on_delete=models.CASCADE) 
+    name = models.CharField(max_length =30)
+    description = models.TextField()
+    location = models.ForeignKey('Location',on_delete=models.CASCADE)
+    category = models.ForeignKey('Category',on_delete=models.CASCADE) 
 
     def __str__(self):
         return self.image_name
@@ -29,7 +29,7 @@ class Image(models.Model):
 
     @classmethod
     def search_by_category(cls, category):
-        images = cls.objects.filter(category__name__icontains=category)
+        images = cls.objects.filter(category)
         return images
 
 class Location(models.Model):
@@ -40,6 +40,9 @@ class Location(models.Model):
 
     def save_location(self):
         self.save()
+
+    def delete_location(self):
+        self.delete()     
 
     @classmethod
     def get_locations(cls):

@@ -24,21 +24,8 @@
   margin-right: 1%;
 }
 
-
-h1, h3 {
-  font-family: Lobster;
-}
 h1 { font-size: 400% }
 
 li{
   float: right;
 }
-.btn{color: blueviolet;}
-.btn:hover{color: orange; text-decoration: none;}
-
-.modal-fade{
-  background-color:rgba(10,10,10,0.9);
-  color:white;
-  padding:3%;
-  border:none;
-  }
