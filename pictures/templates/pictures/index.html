@@ -19,11 +19,11 @@
                   </div>
                   <div class="modal-body">
                       <img src="{{image.image.url}}" alt="{{image.name}}" class="img-fluid" style="height: 300px; width: 400px; ">
-                      <p>{{image.image_description}}</p>
+                      <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 20px; ">{{image.image_description}}</p>
                   </div>
                   <div class="modal-footer">
                      <input class="form-control input-lg" type="text"
-                          value="{{image.image.url}}" id="{{image.id}}.url">
+                          value="{{image.image.url}}" id="{{image.id.url}}">
                       <button class="btn btn-success btn-sm" onclick="copyLink('{{image.id}}.url')">Copy</button>
                       <button type="button" class="btn btn-outline-danger btn-sm" data-dismiss="modal">Close</button>
                   </div>
