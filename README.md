@@ -2,7 +2,7 @@
 <table>
 <tr>
 <td>
-The Blog application allows writers who have signed up to post blogs, delete them and comment on the blogs that are posted. It also allows a person to subscribed to recieve email 
+The Photo app was built for users to view a gallery of photos and save it to their devices and it also contains a catergory ,location and description of the picture
 </td>
 </tr>
 </table>
@@ -12,7 +12,7 @@ Fred Atei
 
 ## Figma
 
-[Click to View]()
+[Click to View](https://www.figma.com/file/JmaB3FWhAmztAEV1zUyVtP/photo-gallery)
 
 ### Development
 Want to contribute? Great!
@@ -29,9 +29,9 @@ To fix a bug or enhance an existing module, follow these steps:
 
 ### Bug / Feature Request
 
-If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://fredatei.github.io/blog/issues/new) by including your search query and the expected result.
+If you find a bug (the website couldn't handle the query and / or gave undesired results), kindly open an issue [here](https://fredatei.github.io/Photo-app/issues/new) by including your search query and the expected result.
 
-If you'd like to request a new function, feel free to do so by opening an issue [here](https://fredatei.github.io/blog/issues/new). Please include sample queries and their corresponding results.
+If you'd like to request a new function, feel free to do so by opening an issue [here](https://fredatei.github.io/Photo-app/issues/new). Please include sample queries and their corresponding results.
 
 
 ## Built with 
@@ -47,6 +47,6 @@ Reach Out: akamaatei@gmail.com
 ## Copyright
 © 2020
 
-## [License](https://github.com/FredAtei/blog/blob/master/LICENSE)
+## [License](https://github.com/FredAtei/Photo-app/blob/master/LICENSE)
 
-MIT © [Fred Atei ](https://github.com/FredAtei/blog)
+MIT © [Fred Atei ](https://github.com/FredAtei/Photo-app)
