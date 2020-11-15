@@ -1,6 +1,6 @@
 .navbar{
   border-bottom: 1px solid silver;
-  background-color: burlywood;
+  background-color: black;
 }
 .navbar-brand{
   margin-left: 3%;
@@ -35,3 +35,10 @@ li{
 }
 .btn{color: blueviolet;}
 .btn:hover{color: orange; text-decoration: none;}
+
+.modalcard{
+  background-color:rgba(10,10,10,0.9);
+  color:white;
+  padding:3%;
+  border:none;
+  }
