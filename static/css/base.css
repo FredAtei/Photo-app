@@ -36,7 +36,7 @@ li{
 .btn{color: blueviolet;}
 .btn:hover{color: orange; text-decoration: none;}
 
-.modalcard{
+.modal-fade{
   background-color:rgba(10,10,10,0.9);
   color:white;
   padding:3%;

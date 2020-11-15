@@ -41,6 +41,11 @@ class Location(models.Model):
     def save_location(self):
         self.save()
 
+    @classmethod
+    def get_locations(cls):
+        locations = Location.objects.all()
+        return locations    
+
 class Category(models.Model):
     name = models.CharField(max_length = 30)
 
@@ -49,4 +54,7 @@ class Category(models.Model):
 
     def save_category(self):
         self.save()
+
+    def delete_category(self):
+        self.delete()    
 
