@@ -1,0 +1,37 @@
+.navbar{
+  border-bottom: 1px solid silver;
+  background-color: burlywood;
+}
+.navbar-brand{
+  margin-left: 3%;
+}
+.navbar-brand img{
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+.navbar-brand span{
+  font-size: 20px;
+  font-weight: normal;
+  font-family: sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+}
+.nav-item a{
+  font-size: 17px;
+}
+.navbar .main-nav{
+  gap: 15px;
+  margin-right: 1%;
+}
+
+
+h1, h3 {
+  font-family: Lobster;
+}
+h1 { font-size: 400% }
+
+li{
+  float: right;
+}
+.btn{color: blueviolet;}
+.btn:hover{color: orange; text-decoration: none;}
