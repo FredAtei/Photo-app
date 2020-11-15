@@ -28,9 +28,9 @@ class Image(models.Model):
         return image_by_location
 
     @classmethod
-    def search_image(cls,category):
-        photos = cls.objects.filter(image_category__name__icontains=category) 
-        return photos
+    def search_by_category(cls, category):
+        images = cls.objects.filter(category__name__icontains=category)
+        return images
 
 class Location(models.Model):
     name = models.CharField(max_length = 30)
